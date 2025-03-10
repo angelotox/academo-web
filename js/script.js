@@ -158,12 +158,16 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Function to close the dropdown menu when a link is clicked
-    navMenu.addEventListener("click", function () {
-        menuIcon.classList.remove("active");
-        navMenu.classList.remove("active");
+    // Smooth scrolling for internal links
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+        anchor.addEventListener('click', function (event) {
+            event.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
     });
-
-
 
 });

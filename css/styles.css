@@ -887,7 +887,7 @@ footer {
     padding: 8px 0; /* Reduce padding for smaller screens */
   }
   .menu-icon {
-    display: none;
+    display: block;
   }
   .logo-img {
     width: 45px;/* Reduce logo size for smaller screens */
@@ -926,10 +926,6 @@ footer {
     font-size: 18px;
     font-weight: 500;
     transition: color 0.3s ease;
-  }
-
-  .menu-icon {
-    display: block;
   }
 
   .menu-icon.active + ul {
