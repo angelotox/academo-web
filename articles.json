@@ -1,0 +1,15 @@
+{
+    "English": [
+        { "title": "Separating the Wheat from the Chaff (1)", "file": "articles/ingles/Reading1.md" },
+        { "title": "Giving Advices to People (2)", "file": "articles/ingles/Reading2.md" },
+        { "title": "On the Way to Ithaca (3)", "file": "articles/ingles/Reading3.md" },
+        { "title": "Key Biblical Concepts: Passages from the Gospels and Paul (4)", "file": "articles/ingles/Reading4.md" },
+        { "title": "Zen 🎋 concept (5)", "file": "articles/ingles/Reading5.md" },
+        { "title": "Talking with a Close Friend (6)", "file": "articles/ingles/Reading6.md" }
+    ],
+    "Français": [
+        { "title": "La Résistance: Un Courage Silencieux ✊ (1)", "file": "articles/frances/lecture1.md" },
+        { "title": "Comment oublier la première fois où j'ai vu la mer ? (2)", "file": "articles/frances/lecture2.md" },
+        { "title": "Psyché : Plus qu'un simple personnage mythologique (3)", "file": "articles/frances/lecture3.md" }
+    ]
+}

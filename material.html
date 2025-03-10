@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Academo - Enseñanza de idiomas con un enfoque holístico y vanguardista" />
+    <meta name="keywords" content="academia, idiomas, enseñanza, cursos" />
+    <meta name="author" content="Academo" />
+    <title>Academo - material y lecturas</title>
+    <link rel="icon" href="img/LogoAcademo.png" type="image/png" />
+    <!-- <script src="script.js" defer></script> -->
+    <script src="js/script-material.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/material-styles.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo-img" id="logo-img-container">
+                    <a href="index.html"><img src="img/LogoAcademo.png" id="logo-img" alt="logo" /></a>
+                </div>
+                <div class="logo">
+                    <a href="index.html">
+                        <h2>Academo</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="menu-icon">&#9776;</div> <!-- Add menu icon -->
+            <ul>
+                <li><a href="index.html" id="link-inicio">Inicio</a></li>
+                <li><a href="index.html#clases" id="link-clases">Clases</a></li>
+                <li><a href="material.html" id="link-material">Material</a></li>
+                <li><a href="index.html#contact" id="link-contacto">Contacto</a></li>
+                <li><a href="index.html#academos-section" id="link-academos">Academos</a></li>
+                <li><a href="index.html#activism" id="link-activismo">Activismo</a></li>
+                <li>
+                    <a href="https://www.instagram.com/academo.ve" target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main><!---
+        <div class="overlay" id="overlay">
+            <div class="prompt-box">
+                <p>Material para estudiantes. Ingresa la contraseña para acceder:</p>
+                <span id="togglePassword" onclick="togglePasswordVisibility()" >
+                    👁️
+                </span>
+                <input type="password" id="passwordInput" 
+                    onkeydown="if(event.key === 'Enter') checkPassword()">
+
+                <button onclick="checkPassword()">Acceder</button>
+                <p id="error" style="color: red;"></p>
+            </div> 
+        </div>-->
+        <div class="observer"></div>
+        <section class="title-section">
+            <div class="title-container">
+                <div class="title-content">
+                    <h2>Material y Lecturas</h2>
+                    <div class="line-detail"></div>
+                    <p>Bienvenido a la sección de material y lecturas. Aquí encontrarás recursos adicionales,
+                        reflexiones y
+                        lecturas de las clases hechas por profesores y Academos. Si eres estudiante estas serán tus
+                        actividades a desarrollar en el salón, así como para tomar un repaso en casa.</p>
+                </div>
+                <div class="illustration-container">
+                    <img src="img/reading-illustration.jpg" alt="illustration" />
+                </div>
+            </div>
+        </section>
+
+        <section class="resources-section">
+            <div class="subtitle-container">
+                <div class="categories-title">
+                    <h2>Categorías</h2>
+                </div>
+                <div class="last-actualization">
+                    <p>Actualizado el 05/03/25</p>
+                </div>
+            </div>
+            <div class="resources-container">
+                <div id="articles"></div>
+                <div id="overlay">
+                    <div id="modal">
+                        <span id="close-btn" onclick="closeModal()">✖</span>
+                        <div id="content"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="enlaces-interes" class="enlaces-interes">
+            <div class="enlaces-interes-container">
+                <h2>Enlaces de Interés</h2>
+                <div class="links-columns">
+                    <div class="contact-content">
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/academo.ve" target="_blank" class="social-icon"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://web.whatsapp.com/send/?phone=584140073003" target="_blank"
+                                class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                        <div class="email-link">
+                            <a href="mailto:info@academo.site">info@academo.site</a>
+                        </div>
+                        <div class="phone-link">
+                            <a href="tel:+584140073003" class="phone-number-1"><i class="fas fa-phone"></i> +58 414
+                                0073003</a>
+                            <a href="tel:+584142673319" class="phone-number-2"><i class="fas fa-phone"></i> +58 414
+                                2673319</a>
+                        </div>
+                    </div>
+                    <div class="internal-links">
+                        <a href="index.html">Inicio</a>
+                        <a href="index.html#academos-section">Academos</a>
+                        <a href="index.html#clases">Clases</a>
+                        <a href="index.html#activism">Donaciones</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Academo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
