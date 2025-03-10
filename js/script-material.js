@@ -90,26 +90,34 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
     }
+
     async function loadArticle(path) {
-        const response = await fetch(path);
-        const text = await response.text();
-        
-        // Extraer el título si empieza con #
-        const lines = text.split('\n');
-        let title = '';
-        if (lines[0].startsWith('#')) {
-            title = `<h2>${lines[0].replace('#', '').trim()}</h2>`;
-            lines.shift(); // Eliminar la primera línea
+        try {
+            const response = await fetch(path);
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            const text = await response.text();
+            
+            // Extraer el título si empieza con #
+            const lines = text.split('\n');
+            let title = '';
+            if (lines[0].startsWith('#')) {
+                title = `<h2>${lines[0].replace('#', '').trim()}</h2>`;
+                lines.shift(); // Eliminar la primera línea
+            }
+            
+            document.getElementById('content').innerHTML = title + '<p>' + lines.join('<br>') + '</p>';
+            document.getElementById('overlay').style.display = 'flex';
+        } catch (error) {
+            console.error('Failed to load article:', error);
         }
-        
-        document.getElementById('content').innerHTML = title + '<p>' + lines.join('<br>') + '</p>';
-        document.getElementById('overlay').style.display = 'flex';
     }
-    
+
     function closeModal() {
         document.getElementById('overlay').style.display = 'none';
     }
-    
+
     document.getElementById('overlay').addEventListener('click', function(event) {
         if (event.target === document.getElementById('overlay')) {
             closeModal();
@@ -117,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     document.getElementById('close-btn').addEventListener('click', closeModal); // Add event listener to close button
-    
+
     loadArticles();
 
     // Function to toggle the dropdown menu
