@@ -165,6 +165,9 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetId = this.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
             if (targetElement) {
+                // Close the dropdown menu before navigating
+                menuIcon.classList.remove("active");
+                navMenu.classList.remove("active");
                 targetElement.scrollIntoView({ behavior: 'smooth' });
             }
         });
