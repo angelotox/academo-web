@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault();
         document.getElementById("academos-section").scrollIntoView({ behavior: "smooth" });
     });
-    
+
     // Function to open the enrollment form in a new tab
     function openEnrollmentForm() {
         window.open("https://forms.gle/E1iFppByHGe9h2beA", "_blank");

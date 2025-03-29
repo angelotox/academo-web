@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academo - Programa de Becas">
+    <meta name="keywords" content="academia, idiomas, enseñanza, becas">
+    <meta name="author" content="Academo">
+    <title>Academo - Programa de Becas</title>
+    <link rel="icon" href="img/LogoAcademo.png" type="image/png">
+    <script src="js/script.js" defer></script>
+    <script src="js/becas.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/becas.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo-img" id="logo-img-container">
+                    <a href="index.html"><img src="img/LogoAcademo.png" id="logo-img" alt="logo"></a>
+                </div>
+                <div class="logo">
+                    <a href="index.html">
+                        <h2 id="logo-container-h2">Academo</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="menu-icon">&#9776;</div>
+            <ul>
+                <li><a href="index.html" id="link-inicio">Inicio</a></li>
+                <li><a href="index.html#clases" id="link-clases">Clases</a></li>
+                <li><a href="material.html" id="link-material">Material</a></li>
+                <li><a href="index.html#contact" id="link-contacto">Contacto</a></li>
+                <li><a href="index.html#academos-section" id="link-academos">Academos</a></li>
+                <li><a href="index.html#activism" id="link-activismo">Activismo</a></li>
+                <li><a href="https://www.instagram.com/academo.ve" target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <div class="hero-text-container">
+                    <h1 id="hero-text">Programa de Becas</h1>
+                </div>
+                <div class="observer"></div>
+                <div class="line-detail-hero"></div>
+                <p id="hero-content-p">¿Quieres aprender algún idioma o participar en los talleres y demás programas
+                    educativos de Academo pero aquejan situaciones económicas adversas?. En Academo, creemos en la
+                    igualdad de oportunidades. Conoce más información</p>
+                <div class="button-container">
+                    <button class="hero-button" id="btn-ver-parcial"><span>Beca Parcial</span></button>
+                    <button class="hero-button" id="btn-ver-exoneracion"><span>Exoneración</span></button>
+                    <button class="hero-button" id="btn-ver-form"><span>Formulario</span></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="parcial-beca" class="sobre">
+            <div class="sobre-container">
+                <div class="sobre-text">
+                    <h2>Becas Parciales</h2>
+                    <div class="line-detail"></div>
+                    <p>Ofrecemos un programa de becas parciales que cubre el <strong>50%</strong> de descuento en la
+                        mensualidad y la exoneración total de la inscripción.
+
+                        Para optar a este beneficio, es necesario llenar el formulario siguiente con una solicitud
+                        formal en la que expreses tu motivación para aprender el idioma y disfrutar de nuestros
+                        talleres. Posteriormente, al ser contactado, deberás presentarte a las entrevistas de becas, las
+                        cuales se realizan durante los primeros cinco días de cada mes. Si cumples con los requisitos
+                        establecidos, podrás acceder a este apoyo financiero.</p>
+                </div>
+                <div class="img-sobre">
+                    <img src="img/parcial-beca.jpg" alt="parcial beca image">
+                </div>
+            </div>
+        </section>
+
+        <section id="complete" class="sobre">
+            <div class="sobre-container">
+                <div class="img-sobre">
+                    <img src="img/complete.jpg" alt="complete beca">
+                </div>
+                <div class="sobre-text">
+                    <h2>Exoneración de mensualidad</h2>
+                    <div class="line-detail"></div>
+                    <p>Este programa está dirigido a estudiantes con compromiso académico y situaciones económicas
+                        adversas, exonerando completamente el costo mensual del curso.
+
+                        El proceso de solicitud es el mismo: llena el siguiente formulario especificando el tipo de beca
+                        que deseas optar, explicando tu motivación y razones para postularte. Luego, al contactarte
+                        asiste a las entrevistas de becas dentro de los primeros cinco días de cada mes. En caso de
+                        cumplir con los requisitos, se te notificará la aprobación de la beca.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="form" class="form">
+            <div>
+                <form action="https://formsubmit.co/montillangeldev@gmail.com" method="POST">
+                    <h2>Formulario de Solicitud de Beca</h2>
+                    <div class="line-detail"></div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Tu Correo" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5"
+                        required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+
+            </div>
+        </section>
+        <section id="enlaces-interes" class="enlaces-interes">
+            <div class="enlaces-interes-container">
+                <h2>Enlaces de Interés</h2>
+                <div class="links-columns">
+                    <div class="contact-content">
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/academo.ve" target="_blank" class="social-icon"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://web.whatsapp.com/send/?phone=584140073003" target="_blank"
+                                class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                        <div class="email-link">
+                            <a href="mailto:info@academo.site">info@academo.site</a>
+                        </div>
+                        <div class="phone-link">
+                            <a href="tel:+584140073003" class="phone-number-1"><i class="fas fa-phone"></i> +58 414
+                                0073003</a>
+                            <a href="tel:+584142673319" class="phone-number-2"><i class="fas fa-phone"></i> +58 414
+                                2673319</a>
+                        </div>
+                    </div>
+                    <div class="internal-links">
+                        <a href="index.html">Inicio</a>
+                        <a href="#academos-section">Academos</a>
+                        <a href="clases.html">Clases</a>
+                        <a href="#activism">Donaciones</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Academo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
